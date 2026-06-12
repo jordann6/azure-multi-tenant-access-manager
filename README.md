@@ -1,5 +1,7 @@
 # Azure Multi-Tenant Access Manager
 
+[![Validate](https://github.com/jordann6/azure-multi-tenant-access-manager/actions/workflows/validate.yml/badge.svg)](https://github.com/jordann6/azure-multi-tenant-access-manager/actions/workflows/validate.yml)
+
 Terraform-governed access-control plane for multi-tenant Azure workloads. Each tenant (workload team) is onboarded as a unit: an isolated Key Vault, a user-assigned managed identity scoped read-only to its own vault, and an Entra ID security group with secrets-management rights. A cross-tenant platform-admin group holds read-only governance across every vault. All access is Azure RBAC, so every grant is an auditable role assignment, not an opaque access policy.
 
 ## Architecture
